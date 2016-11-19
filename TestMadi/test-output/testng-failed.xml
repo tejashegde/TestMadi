@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" name="Failed suite [TestSuite]" parallel="methods">
+  <test name="LoginTest(failed)" parallel="methods">
+    <classes>
+      <class name="com.testmadi.tests.LoginTest">
+        <methods>
+          <include name="loginToApp1"/>
+          <include name="loginToApp3"/>
+          <include name="loginToApp2"/>
+          <include name="quitDriver"/>
+          <include name="instantiateDriverObject"/>
+          <include name="beforeMethod"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.testmadi.tests.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

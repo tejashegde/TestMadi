@@ -1,0 +1,7 @@
+<suite name="TestSuite" parallel="methods" thread-count="15">
+	<test name="LoginTest" preserve-order="true">
+		<classes>
+			<class name="com.testmadi.tests.LoginTest"></class>
+		</classes>
+	</test>
+</suite>
