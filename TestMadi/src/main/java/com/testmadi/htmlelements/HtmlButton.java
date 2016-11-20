@@ -2,11 +2,14 @@ package com.testmadi.htmlelements;
 
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.testmadi.driver.WebDriverFactory;
 import com.testmadi.reports.TestReport;
 import com.testmadi.utils.ElementWait;
 
@@ -19,11 +22,15 @@ public class HtmlButton {
 	 * @return :boolean true or false
 	 * @throws Throwable
 	 */
-	public static boolean clickButton(WebElement element) throws Throwable {
+	public static boolean clickButton(By element,String stepInfo) throws Throwable {
 		ExtentTest testReporter = TestReport.getTest();
 		try {
 
-			ElementWait.waitForElement(element).click();
+			WebDriverWait wait = new WebDriverWait(WebDriverFactory.getDriver(),20);
+			wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+			
+			testReporter.log(LogStatus.INFO, stepInfo);
+			
 			testReporter.log(LogStatus.INFO, "Clicked on the button @: "
 					+ element);
 			return true;
@@ -49,8 +56,8 @@ public class HtmlButton {
 			throws Throwable {
 		ExtentTest testReporter = TestReport.getTest();
 		try {
-
-			ElementWait.waitForElement(element).click();
+			element.click();
+			//ElementWait.waitForElement(element).click();
 			testReporter.log(LogStatus.INFO, stepInfo);
 			return true;
 		} catch (NoSuchElementException e) {

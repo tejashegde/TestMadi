@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testmadi.tests.ExcelRead">
+      <class name="com.testmadi.tests.LoginTest">
         <methods>
-          <include name="geckoDriver"/>
+          <include name="quitDriver"/>
+          <include name="closeDriverObjects"/>
+          <include name="instantiateDriverObject"/>
+          <include name="beforeMethod"/>
+          <include name="loginToApp"/>
         </methods>
-      </class> <!-- com.testmadi.tests.ExcelRead -->
+      </class> <!-- com.testmadi.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

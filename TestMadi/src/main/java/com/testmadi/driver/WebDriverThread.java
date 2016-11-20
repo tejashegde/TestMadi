@@ -11,6 +11,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
+import java.util.concurrent.TimeUnit;
+
 import static com.testmadi.driver.BrowserCapabilities.FIREFOX;
 import static com.testmadi.driver.BrowserCapabilities.CHROME;
 import static com.testmadi.driver.BrowserCapabilities.valueOf;
@@ -43,7 +45,7 @@ public class WebDriverThread {
 					.getDesiredCapabilities();
 			instantiateWebDriver(desiredCapabilities);
 		}
-
+	//	webdriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		return webdriver;
 	}
 

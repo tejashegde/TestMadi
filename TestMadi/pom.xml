@@ -13,7 +13,7 @@
 		<!-- Dependency versions -->
 		<selenium.version>3.0.1</selenium.version>
 		<!-- Configurable variables -->
-		<threads>4</threads>
+		<threads>1</threads>
 	</properties>
 
 	<profiles>

@@ -6,6 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,23 +25,15 @@ public class ElementWait {
 	public static WebElement waitForElement(final WebElement element)
 			throws Throwable {
 		WebDriver driver = WebDriverFactory.getDriver();
-		WebElement foundElement = null;
+	
 		try {
-			Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-					.withTimeout(60, TimeUnit.SECONDS)
-					.pollingEvery(5, TimeUnit.SECONDS)
-					.withMessage("The element "+element+" coud not be found after searching for a minute" )
-					.ignoring(NoSuchElementException.class);
-			foundElement = fluentWait
-					.until(visibilityOfElementLocated(element));
-			return foundElement;
+			driver.manage().timeouts().implicitlyWait(30L,TimeUnit.SECONDS);
+			return element;
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		return foundElement;
-
+		return element;
 	}
 
 	/**

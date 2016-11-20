@@ -10,4 +10,12 @@ public class ProjectConstants {
 			+ File.separator;
 	public static final String GECKO_DRIVER_PATH=System.getProperty("user.dir") + File.separator + "drivers"
 			+ File.separator + "geckodriver";
+	
+	/**
+	 * Method is used to print a string value in the console
+	 * @param value
+	 */
+	public static void print(String value){
+		System.out.println(value);
+	}
 }

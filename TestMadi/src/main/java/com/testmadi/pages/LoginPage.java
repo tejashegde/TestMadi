@@ -1,9 +1,16 @@
 package com.testmadi.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static com.testmadi.htmlelements.HtmlButton.clickButton;
+import static com.testmadi.htmlelements.HtmlEditBox.enterText;
+import static com.testmadi.utils.BrowserHelper.navigateToUrl;
 
 import com.testmadi.data.ProjectConstants;
 import com.testmadi.driver.WebDriverFactory;
@@ -27,6 +34,9 @@ public class LoginPage extends WebDriverFactory {
 
 	@FindBy(id ="login")
 	public WebElement loginButton;
+	
+	public static final By PRODUCTS_LINK = By
+	        .linkText("All Producta");
 
 	/***
 	 * 
@@ -40,15 +50,19 @@ public class LoginPage extends WebDriverFactory {
 	 */
 	public DashBoardPage doLogin(String myUserName, String myPassWord)
 			throws Throwable {
-		BrowserHelper.navigateToUrl(ProjectConstants.appURL);
 		
-		HtmlEditBox.enterText(userName, myUserName, "Entering the userName "
+		navigateToUrl(ProjectConstants.appURL);
+		
+		enterText(userName, myUserName, "Entering the userName "
 				+ myUserName + " Into the UserName Box");
 		
-		HtmlEditBox.enterText(passWord, myPassWord,"Entering the PassWord "
+		enterText(passWord, myPassWord,"Entering the PassWord "
 				+ myPassWord + " Into the UserName Box");
 		
-		HtmlButton.clickButton(loginButton,"Clicking the LoginButton");
+		clickButton(loginButton,"Clicking the LoginButton");
+		
+		clickButton(PRODUCTS_LINK,"Clicking the Products Link");
+		
 		
 		return new DashBoardPage();
 	}

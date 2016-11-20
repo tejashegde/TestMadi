@@ -3,7 +3,10 @@ package com.testmadi.htmlelements;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -50,7 +53,8 @@ public class HtmlEditBox {
 			String stepInfo) throws Throwable {
 		ExtentTest testReporter = TestReport.getTest();
 		try {
-			ElementWait.waitForElement(element).sendKeys(textToBeEntered);
+			element.sendKeys(textToBeEntered);
+			
 			testReporter.log(LogStatus.INFO,stepInfo);
 			return true;
 		} catch (NoSuchElementException e) {
