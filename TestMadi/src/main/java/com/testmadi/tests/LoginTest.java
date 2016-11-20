@@ -14,6 +14,7 @@ public static String password ="8JzGfa#hCvXFwK%1";
 	public void loginToApp() throws Throwable {
 		LoginPage lp = new LoginPage();
 		lp.doLogin(userName,password);
+	//	Assert.assertTrue(false);
 		Thread.sleep(3000);
 	}
 	

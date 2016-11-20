@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-//import static com.testmadi.driver.DriverType.FIREFOX;
+import static com.testmadi.driver.BrowserCapabilities.FIREFOX;
 import static com.testmadi.driver.BrowserCapabilities.CHROME;
 import static com.testmadi.driver.BrowserCapabilities.valueOf;
 
@@ -19,9 +19,9 @@ public class WebDriverThread {
 	private WebDriver webdriver;
 	private BrowserCapabilities browserType;
 
-	private final BrowserCapabilities defaultBrowserType = CHROME;
+	private final BrowserCapabilities defaultBrowserType = FIREFOX;
 	//private final String browser = System.getProperty("browser").toUpperCase();
-	private final String browser ="CHROME";
+	private final String browser ="FIREFOX";
 	 private final boolean useRemoteWebDriver = Boolean.getBoolean("remoteDriver");
 
 	// System.getProperty("browser").toUpperCase();

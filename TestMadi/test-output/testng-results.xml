@@ -2,27 +2,16 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="9046" started-at="2016-11-19T21:01:19Z" finished-at="2016-11-19T21:01:28Z">
+  <suite name="TestSuite" duration-ms="9698" started-at="2016-11-20T16:09:59Z" finished-at="2016-11-20T16:10:09Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="9046" started-at="2016-11-19T21:01:19Z" finished-at="2016-11-19T21:01:28Z">
+    <test name="LoginTest" duration-ms="9698" started-at="2016-11-20T16:09:59Z" finished-at="2016-11-20T16:10:09Z">
       <class name="com.testmadi.tests.LoginTest">
-        <test-method status="PASS" signature="instantiateDriverObject()[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="instantiateDriverObject" is-config="true" duration-ms="5" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:19Z">
+        <test-method status="PASS" signature="instantiateDriverObject()[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="instantiateDriverObject" is-config="true" duration-ms="6" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:09:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiateDriverObject -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="beforeMethod" is-config="true" duration-ms="161" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.testmadi.tests.LoginTest.loginToApp2() throws java.lang.Throwable]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="beforeMethod" is-config="true" duration-ms="161" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="beforeMethod" is-config="true" duration-ms="159" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:09:59Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="beforeMethod" is-config="true" duration-ms="161" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="beforeMethod" is-config="true" duration-ms="159" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:09:59Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="beforeMethod" is-config="true" duration-ms="161" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="beforeMethod" is-config="true" duration-ms="159" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:09:59Z">
           <params>
             <param index="0">
               <value>
@@ -55,34 +44,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="loginToApp" duration-ms="8679" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:27Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="beforeMethod" is-config="true" duration-ms="159" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:09:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.testmadi.tests.LoginTest.loginToApp2() throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="loginToApp2()[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="loginToApp2" duration-ms="8804" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp2 -->
-        <test-method status="PASS" signature="loginToApp3()[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="loginToApp3" duration-ms="7909" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:27Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginToApp3()[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="loginToApp3" duration-ms="9086" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:10:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp3 -->
-        <test-method status="PASS" signature="loginToApp1()[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="loginToApp1" duration-ms="7627" started-at="2016-11-19T16:01:19Z" finished-at="2016-11-19T16:01:26Z">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="loginToApp" duration-ms="9419" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method status="PASS" signature="loginToApp1()[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="loginToApp1" duration-ms="9086" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:10:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp1 -->
-        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="quitDriver" is-config="true" duration-ms="77" started-at="2016-11-19T16:01:26Z" finished-at="2016-11-19T16:01:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.testmadi.tests.LoginTest.loginToApp1() throws java.lang.Throwable]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="loginToApp2()[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="loginToApp2" duration-ms="9196" started-at="2016-11-20T11:09:59Z" finished-at="2016-11-20T11:10:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="quitDriver" is-config="true" duration-ms="72" started-at="2016-11-19T16:01:27Z" finished-at="2016-11-19T16:01:27Z">
+        </test-method> <!-- loginToApp2 -->
+        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="quitDriver" is-config="true" duration-ms="133" started-at="2016-11-20T11:10:08Z" finished-at="2016-11-20T11:10:09Z">
           <params>
             <param index="0">
               <value>
@@ -93,18 +82,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="quitDriver" is-config="true" duration-ms="71" started-at="2016-11-19T16:01:27Z" finished-at="2016-11-19T16:01:27Z">
+        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="quitDriver" is-config="true" duration-ms="132" started-at="2016-11-20T11:10:08Z" finished-at="2016-11-20T11:10:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.testmadi.tests.LoginTest.loginToApp() throws java.lang.Throwable]]>
+                <![CDATA[public void com.testmadi.tests.LoginTest.loginToApp1() throws java.lang.Throwable]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="quitDriver" is-config="true" duration-ms="70" started-at="2016-11-19T16:01:28Z" finished-at="2016-11-19T16:01:28Z">
+        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="quitDriver" is-config="true" duration-ms="107" started-at="2016-11-20T11:10:09Z" finished-at="2016-11-20T11:10:09Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +104,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="closeDriverObjects()[pri:0, instance:com.testmadi.tests.LoginTest@271053e1]" name="closeDriverObjects" is-config="true" duration-ms="189" started-at="2016-11-19T16:01:28Z" finished-at="2016-11-19T16:01:28Z">
+        <test-method status="PASS" signature="quitDriver(java.lang.reflect.Method)[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="quitDriver" is-config="true" duration-ms="108" started-at="2016-11-20T11:10:09Z" finished-at="2016-11-20T11:10:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.testmadi.tests.LoginTest.loginToApp() throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="closeDriverObjects()[pri:0, instance:com.testmadi.tests.LoginTest@3f49dace]" name="closeDriverObjects" is-config="true" duration-ms="188" started-at="2016-11-20T11:10:09Z" finished-at="2016-11-20T11:10:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverObjects -->

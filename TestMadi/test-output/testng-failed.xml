@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="15" name="Failed suite [TestSuite]" parallel="methods">
-  <test name="LoginTest(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.testmadi.tests.LoginTest">
+      <class name="com.testmadi.tests.ExcelRead">
         <methods>
-          <include name="loginToApp1"/>
-          <include name="loginToApp3"/>
-          <include name="loginToApp2"/>
-          <include name="quitDriver"/>
-          <include name="instantiateDriverObject"/>
-          <include name="beforeMethod"/>
-          <include name="loginToApp"/>
+          <include name="geckoDriver"/>
         </methods>
-      </class> <!-- com.testmadi.tests.LoginTest -->
+      </class> <!-- com.testmadi.tests.ExcelRead -->
     </classes>
-  </test> <!-- LoginTest(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

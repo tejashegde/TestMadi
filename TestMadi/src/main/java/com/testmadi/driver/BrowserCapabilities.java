@@ -10,6 +10,8 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
+import com.testmadi.data.ProjectConstants;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,7 +22,10 @@ public enum BrowserCapabilities implements WebDriverSetup {
 
 	FIREFOX {
 		public DesiredCapabilities getDesiredCapabilities() {
+			System.setProperty("webdriver.gecko.driver",
+					ProjectConstants.GECKO_DRIVER_PATH);
 			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+			capabilities.setCapability("marionette", true);
 			return capabilities;
 		}
 
